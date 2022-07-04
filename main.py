@@ -3,6 +3,8 @@ from urllib import request
 from fastapi import FastAPI, Request, Query
 from fastapi.middleware.cors import CORSMiddleware
 import joblib
+import nltk
+nltk.download('punkt')
 
 
 from nltk.corpus import stopwords
