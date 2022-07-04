@@ -4,6 +4,10 @@ from fastapi import FastAPI, Request, Query
 from fastapi.middleware.cors import CORSMiddleware
 import joblib
 
+
+import nltk
+nltk.download('stopwords')
+
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
