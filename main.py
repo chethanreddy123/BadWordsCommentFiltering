@@ -1,5 +1,4 @@
 import pickle
-from scipy import spatial
 from urllib import request
 from fastapi import FastAPI, Request, Query
 from fastapi.middleware.cors import CORSMiddleware
