@@ -52,6 +52,9 @@ app.add_middleware(
 
 @app.post("/checkStatus")
 async def checkStatus(info : Request):
+
+    print(info.body())
+
     req_info = await info.json()
     CurrString = dict(req_info)["comment"]
 
