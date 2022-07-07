@@ -77,7 +77,7 @@ async def checkStatus(info : Request):
             s1 = word2vec(i)
             s2 = word2vec(j)
             res = cosdis(s1,s2)
-            if res > 0.9:
+            if res > 0.95:
                 print(i,j)
                 status = True
                 break
